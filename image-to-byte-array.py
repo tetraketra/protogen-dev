@@ -64,9 +64,11 @@ for anim_name in animations.keys():
                 animation_length += 1
 
     line = line.replace("X__ABC__X", str(animation_length))
-    line += "}\n"
+    line += "};\n"
     header_file.write(line)
     
+header_file.write("\n")
+
 
 
 # CLEANUP =====================================================================
